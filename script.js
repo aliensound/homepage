@@ -10,7 +10,7 @@
    Formato: código de país + número, SIN "+", espacios ni guiones.
    Ejemplo México: "5215512345678"  (52 = país, 1, luego 10 dígitos)
    ============================================================ */
-const NUMERO_WHATSAPP = "NUMERO_WHATSAPP";
+const NUMERO_WHATSAPP = "524461276183";
 
 /* Construye todos los enlaces de WhatsApp de la página.
    Cada botón con la clase .js-wa usa su atributo data-msg como texto. */
