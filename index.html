@@ -1,0 +1,235 @@
+<!-- ============================================================= -->
+<!--  Alien Sound - Audio, Iluminación y DJ                        -->
+<!--  Sitio estático de una sola página para GitHub Pages          -->
+<!--                                                               -->
+<!--  >>> DÓNDE EDITAR TUS DATOS <<<                               -->
+<!--  1. Número de WhatsApp: busca "NUMERO_WHATSAPP" en este       -->
+<!--     archivo y en script.js y reemplázalo por tu número con    -->
+<!--     código de país, SIN "+" ni espacios. Ej: 5215512345678   -->
+<!--  2. Redes sociales: busca "@instagram", "@facebook" y         -->
+<!--     "@tiktok" más abajo y pon tus enlaces reales.             -->
+<!--  3. Metadatos SEO/Open Graph: ajusta la URL del sitio en las  -->
+<!--     etiquetas og:url y og:image si cambia tu dominio.         -->
+<!-- ============================================================= -->
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===================== SEO básico ===================== -->
+  <title>Alien Sound | Audio, Iluminación y DJ para Eventos</title>
+  <meta name="description" content="Alien Sound: renta de equipo de audio, iluminación profesional y servicio de DJ para tus eventos. Paquetes desde lo esencial hasta producción completa con láser, humo y cabezas móviles." />
+  <meta name="keywords" content="audio, iluminación, DJ, eventos, sonido, renta de equipo, láser, fiesta, Alien Sound" />
+  <meta name="author" content="Alien Sound" />
+  <meta name="theme-color" content="#05010f" />
+
+  <!-- ===================== Open Graph ===================== -->
+  <!-- Cambia la URL por la de tu sitio publicado en GitHub Pages -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Alien Sound | Audio, Iluminación y DJ" />
+  <meta property="og:description" content="Audio, iluminación profesional y DJ para tus eventos. Paquetes a tu medida." />
+  <meta property="og:image" content="https://aliensound.github.io/homepage/images/og_image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:url" content="https://aliensound.github.io/homepage/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Alien Sound | Audio, Iluminación y DJ" />
+  <meta name="twitter:description" content="Audio, iluminación profesional y DJ para tus eventos." />
+  <meta name="twitter:image" content="https://aliensound.github.io/homepage/images/og_image.jpg" />
+
+  <link rel="icon" type="image/webp" href="images/logo.webp" />
+
+  <!-- Google Fonts: Orbitron (títulos) + Rajdhani (texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Capas de fondo: estrellas + nebulosa + láseres -->
+  <canvas id="stars"></canvas>
+  <div class="nebula"></div>
+  <div class="lasers">
+    <span></span><span></span><span></span>
+  </div>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header">
+    <a href="#hero" class="nav-brand">ALIEN&nbsp;SOUND</a>
+    <nav class="nav-links">
+      <a href="#paquetes">Paquetes</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero" class="hero">
+    <div class="hero-inner">
+      <img src="images/logo.webp" alt="Logo de Alien Sound" class="hero-logo" width="420" height="420" />
+      <h1 class="hero-title chrome-text">ALIEN SOUND</h1>
+      <p class="hero-tagline">Audio · Iluminación · DJ para tus eventos</p>
+      <!-- CTA principal: el enlace se arma en script.js con tu número -->
+      <a class="btn btn-whatsapp js-wa" data-msg="Hola, me interesa cotizar un evento con Alien Sound." href="#contacto">
+        <span class="wa-icon" aria-hidden="true">🛸</span> Cotiza por WhatsApp
+      </a>
+    </div>
+    <a href="#paquetes" class="scroll-cue" aria-label="Bajar a paquetes">▼</a>
+  </section>
+
+  <!-- ===================== PAQUETES ===================== -->
+  <section id="paquetes" class="section">
+    <div class="section-head reveal">
+      <h2 class="chrome-text">Paquetes</h2>
+      <p class="section-sub">Elige el nivel de producción para tu evento</p>
+    </div>
+
+    <div class="cards">
+
+      <!-- Paquete 1 -->
+      <article class="card reveal">
+        <div class="card-img-wrap">
+          <img src="images/Paquete 1.webp" alt="Paquete 1 de audio e iluminación" loading="lazy" class="js-zoom" tabindex="0" role="button" aria-label="Ampliar imagen del Paquete 1" />
+        </div>
+        <div class="card-body">
+          <h3 class="card-title chrome-text">Paquete 1</h3>
+          <ul class="card-list">
+            <li>Bajo de 15"</li>
+            <li>2 Medios</li>
+            <li>4 Luces LED multicolor</li>
+            <li>2 Micrófonos inalámbricos JBL</li>
+            <li>Cabina + DJ</li>
+          </ul>
+          <a class="btn btn-card js-wa" data-msg="Hola, me interesa el Paquete 1." href="#contacto">Reservar por WhatsApp</a>
+        </div>
+      </article>
+
+      <!-- Paquete 2 -->
+      <article class="card reveal delay-1">
+        <div class="card-img-wrap">
+          <img src="images/Paquete 2.webp" alt="Paquete 2 de audio e iluminación" loading="lazy" class="js-zoom" tabindex="0" role="button" aria-label="Ampliar imagen del Paquete 2" />
+        </div>
+        <div class="card-body">
+          <h3 class="card-title chrome-text">Paquete 2</h3>
+          <ul class="card-list">
+            <li>Todo lo del Paquete 1</li>
+            <li>Láser multicolor</li>
+            <li>Máquina de humo</li>
+          </ul>
+          <a class="btn btn-card js-wa" data-msg="Hola, me interesa el Paquete 2." href="#contacto">Reservar por WhatsApp</a>
+        </div>
+      </article>
+
+      <!-- Paquete 3 -->
+      <article class="card reveal delay-2">
+        <div class="card-img-wrap">
+          <img src="images/Paquete 3.webp" alt="Paquete 3 de audio e iluminación" loading="lazy" class="js-zoom" tabindex="0" role="button" aria-label="Ampliar imagen del Paquete 3" />
+        </div>
+        <div class="card-body">
+          <h3 class="card-title chrome-text">Paquete 3</h3>
+          <ul class="card-list">
+            <li>2 Bajos de 18"</li>
+            <li>2 Medios de 15"</li>
+            <li>4 Luces LED multicolor</li>
+            <li>2 Micrófonos inalámbricos JBL</li>
+            <li>Cabina + DJ</li>
+            <li>Láser multicolor</li>
+            <li>Máquina de humo</li>
+            <li>2 Cabezas móviles</li>
+          </ul>
+          <a class="btn btn-card js-wa" data-msg="Hola, me interesa el Paquete 3." href="#contacto">Reservar por WhatsApp</a>
+        </div>
+      </article>
+
+      <!-- Paquete 4 -->
+      <article class="card reveal delay-3">
+        <div class="card-img-wrap">
+          <img src="images/Paquete 4.webp" alt="Paquete 4 de audio e iluminación" loading="lazy" class="js-zoom" tabindex="0" role="button" aria-label="Ampliar imagen del Paquete 4" />
+        </div>
+        <div class="card-body">
+          <h3 class="card-title chrome-text">Paquete 4</h3>
+          <ul class="card-list">
+            <li>Todo lo del Paquete 3</li>
+            <li>2 Luces robóticas</li>
+            <li>Pantalla</li>
+          </ul>
+          <a class="btn btn-card js-wa" data-msg="Hola, me interesa el Paquete 4." href="#contacto">Reservar por WhatsApp</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===================== NOSOTROS ===================== -->
+  <section id="nosotros" class="section">
+    <div class="about reveal">
+      <h2 class="chrome-text">Sobre nosotros</h2>
+      <p>
+        En <strong>Alien Sound</strong> llevamos la energía de otro planeta a tus eventos.
+        Somos un equipo apasionado por el <strong>audio profesional</strong>, la
+        <strong>iluminación espectacular</strong> y el <strong>DJ en vivo</strong> que
+        hace bailar a cualquier multitud. Bodas, XV años, fiestas privadas,
+        eventos corporativos y más: montamos la producción a la medida de tu
+        celebración para que solo te preocupes por disfrutar.
+      </p>
+      <p>
+        Equipo de alta potencia, luces que transforman el espacio y un sonido
+        limpio y contundente. Cuéntanos tu evento y armamos el paquete ideal.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACTO Y REDES ===================== -->
+  <section id="contacto" class="section">
+    <div class="contact reveal">
+      <h2 class="chrome-text">Contáctanos</h2>
+      <p class="section-sub">Cotiza tu evento sin compromiso</p>
+
+      <a class="btn btn-whatsapp btn-lg js-wa" data-msg="Hola, quiero información sobre Alien Sound." href="#">
+        <span class="wa-icon" aria-hidden="true">🛸</span> Escríbenos por WhatsApp
+      </a>
+
+      <!-- ===== REDES SOCIALES =====
+           Reemplaza los href con tus enlaces reales:
+           Instagram: https://instagram.com/TU_USUARIO
+           Facebook:  https://facebook.com/TU_PAGINA
+           TikTok:    https://tiktok.com/@TU_USUARIO             -->
+      <div class="socials">
+        <a href="@instagram" class="social" aria-label="Instagram" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4a3.8 3.8 0 0 1-1.4-.9 3.8 3.8 0 0 1-.9-1.4c-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2Zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1.1-1.7.2-2.1.4-.5.2-.9.4-1.3.8-.4.4-.6.8-.8 1.3-.2.4-.3 1-.4 2.1-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c.1 1.1.2 1.7.4 2.1.2.5.4.9.8 1.3.4.4.8.6 1.3.8.4.2 1 .3 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.7-.2 2.1-.4.5-.2.9-.4 1.3-.8.4-.4.6-.8.8-1.3.2-.4.3-1 .4-2.1.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1.1-.2-1.7-.4-2.1a3.5 3.5 0 0 0-.8-1.3 3.5 3.5 0 0 0-1.3-.8c-.4-.2-1-.3-2.1-.4-1.2-.1-1.6-.1-4.7-.1Zm0 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8Zm0 8a3.1 3.1 0 1 0 0-6.2 3.1 3.1 0 0 0 0 6.2Zm6.2-8.2a1.15 1.15 0 1 1-2.3 0 1.15 1.15 0 0 1 2.3 0Z"/></svg>
+        </a>
+        <a href="@facebook" class="social" aria-label="Facebook" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12Z"/></svg>
+        </a>
+        <a href="@tiktok" class="social" aria-label="TikTok" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M16.5 3c.3 2.1 1.5 3.4 3.5 3.5v2.4c-1.2.1-2.3-.3-3.5-1v5.7c0 3.4-2.5 5.9-5.9 5.9A5.6 5.6 0 0 1 5 13.9a5.6 5.6 0 0 1 6.5-4.8v2.6c-.4-.1-.8-.2-1.2-.2a2.7 2.7 0 1 0 2.7 2.7V3h3.5Z"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <img src="images/logo.webp" alt="Alien Sound" class="footer-logo" width="60" height="60" />
+    <p>&copy; <span id="year"></span> Alien Sound — Audio, Iluminación y DJ. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- ===================== LIGHTBOX (imagen ampliada) ===================== -->
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+    <button class="lightbox-close" aria-label="Cerrar imagen">&times;</button>
+    <figure class="lightbox-figure">
+      <img id="lightbox-img" src="" alt="" />
+      <figcaption id="lightbox-cap"></figcaption>
+    </figure>
+  </div>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a class="wa-float js-wa" data-msg="Hola, me interesa cotizar con Alien Sound." href="#" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.6.2-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.6-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.2 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3ZM12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2Zm0 18.3c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.3 8.3 0 1 1 12 20.3Z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
